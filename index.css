@@ -1,8 +1,11 @@
-body, html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   height: 100%;
-  width: 100%;
 }
 
 body {
@@ -30,27 +33,22 @@ body {
   height: 50px;
 }
 
-.main-container .form-area form {
-  height: 100%;
-}
-
-.main-container .form-area form input {
+.main-container .form-area input {
   padding: 0;
   margin: 0;
 }
 
-.main-container .form-area form input[type="text"] {
+.main-container .form-area input[type="text"] {
   width: calc(100% - 100px);
   padding-left: 10px;
   height: 100%;
   font-size: 12px;
   float: left;
   border: 1px solid #eee;
-  box-sizing: border-box;
   outline: none;
 }
 
-.main-container .form-area form input[type="submit"] {
+.main-container .form-area input[type="submit"] {
   float: right;
   width: 100px;
   height: 100%;
